@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Book Library</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#"><i class="fas fa-home"></i> Home</a>
+        <a href="#"><i class="fas fa-headset"></i> Customer Service</a>
+        <a href="#"><i class="fas fa-credit-card"></i> Payment</a>
+    </div>
+    <div class="container">
+        <h1>My Book Library</h1>
+        <input type="text" id="search" placeholder="Search for a book..." />
+        
+        <div class="book-form">
+            <input type="text" id="title" placeholder="Book Title" required />
+            <input type="text" id="author" placeholder="Author" required />
+            <input type="text" id="category" placeholder="Category" required />
+            <button id="addBook">Add Book</button>
+        </div>
+
+        <h2>Books</h2>
+        <ul id="bookList"></ul>
+
+        <h2>Borrowing History</h2>
+        <ul id="borrowHistory"></ul>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
